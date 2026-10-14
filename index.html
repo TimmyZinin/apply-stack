@@ -439,7 +439,7 @@ section .inner{ max-width:var(--max); margin:0 auto; width:100%; }
 #s08 .notes p{ margin:0 0 14px; break-inside:avoid; }
 #s08 .notes code{ font-family:var(--mono); font-size: 12.5px; background:var(--bone-2); color:var(--ink); padding:1px 5px; border-radius:2px; }
 
-/* ===== 09 hh-outreach ===== */
+/* ===== 09 vacancy-outreach-skill ===== */
 #s09 .grid{
   display:grid; grid-template-columns: 1.05fr .95fr; gap: clamp(24px, 5vw, 80px);
   align-items:start;
@@ -740,7 +740,7 @@ html.reduce #s11 .status-card .hdr .live::before{ animation:none; }
         <article class="col reveal" style="--d:80ms;">
           <div class="mark"><span>Скилл</span><span class="n">02</span></div>
           <h3>hh-<em>outreach</em></h3>
-          <p class="purpose">Ловит B2B-лиды через вакансии HH.ru.</p>
+          <p class="purpose">Помогает искать вакансии и готовить адресные отклики.</p>
           <div class="metric"><b>581</b>сопроводительных отправлено · 703 вакансии обработаны · 13 ответов.</div>
         </article>
         <article class="col reveal" style="--d:160ms;">
@@ -939,25 +939,25 @@ html.reduce #s11 .status-card .hdr .live::before{ animation:none; }
     </div>
   </section>
 
-  <!-- 09 — hh-outreach -->
+  <!-- 09 — vacancy-outreach-skill -->
   <section id="s09" aria-labelledby="s09h">
     <div class="inner">
       <div class="section-head">
         <span class="folio">09 / 12</span>
-        <h2 id="s09h">hh-outreach — исходящие продажи в костюме поиска работы</h2>
+        <h2 id="s09h">Vacancy Outreach Skill — работа с вакансиями</h2>
         <span class="meta">Скилл 02</span>
       </div>
 
       <div class="grid">
         <div>
           <blockquote class="quote reveal">
-            "В порыве ночного безумия я собрал скилл, который за меня фармит лидов на hh. Outbound sales engine, замаскированный под job search."
-            <span class="src">— Тим, README, hh-outreach</span>
+            "Независимый проект для работы с вакансиями и подготовки персонализированных откликов. Условия площадки нужно проверить до использования."
+            <span class="src">— Описание проекта</span>
           </blockquote>
 
           <ul class="bullets">
-            <li class="reveal">Репо: <a href="https://github.com/TimmyZinin/hh-outreach" rel="noopener">github.com/TimmyZinin/hh-outreach</a></li>
-            <li class="reveal" style="--d:60ms;">Запуск: <code>/hh-outreach &lt;N&gt; [query] [--flags]</code>. Флаги: <code>--period N</code>, <code>--min-salary N</code>, <code>--dry-run</code>, <code>--preview</code>, <code>--any-format</code>, <code>--no-filter</code>, <code>--query "…"</code>.</li>
+            <li class="reveal">Репо: <a href="https://github.com/TimmyZinin/vacancy-outreach-skill" rel="noopener">github.com/TimmyZinin/vacancy-outreach-skill</a></li>
+            <li class="reveal" style="--d:60ms;">Запуск: <code>/vacancy-outreach &lt;N&gt; [query] [--flags]</code>. Флаги: <code>--period N</code>, <code>--min-salary N</code>, <code>--dry-run</code>, <code>--preview</code>, <code>--any-format</code>, <code>--no-filter</code>, <code>--query "…"</code>.</li>
             <li class="reveal" style="--d:120ms;">Дефолтный запрос: <code>маркетолог OR SMM OR контент</code>. По умолчанию: только удалёнка, последний день.</li>
             <li class="reveal" style="--d:180ms;">Шаблон: <b>OPENING</b> (5 ротируемых вариантов) + <b>VACANCY_REACTION</b> (перефразированное описание, не копипаст) + <b>OFFER</b> + <b>WHAT_I_DO</b> + <b>SLOTS</b> + <b>CTA</b> (Calendly).</li>
             <li class="reveal" style="--d:240ms;">Каждый HR, выложивший вакансию с зарплатой, — это проспект с <em>подтверждённым бюджетом</em> и <em>конкретной болью</em>. Вместо отклика на наём — питч парт-тайма или ИП-консалтинга.</li>
@@ -985,7 +985,7 @@ html.reduce #s11 .status-card .hdr .live::before{ animation:none; }
     <div class="inner">
       <div class="section-head">
         <span class="folio">10 / 12</span>
-        <h2 id="s10h">hh-outreach — поток</h2>
+        <h2 id="s10h">Vacancy Outreach Skill — поток</h2>
         <span class="meta">Из SPEC · минимальный пайплайн без SVG</span>
       </div>
 
@@ -1006,7 +1006,7 @@ html.reduce #s11 .status-card .hdr .live::before{ animation:none; }
           Скилл — процесс с <b>состоянием</b>. Каждая отправка — строка аудита. У каждого сбоя — названный режим. Ничего не допускаем; любое утверждение — лог.
         </p>
         <aside class="side reveal" style="--d:120ms;">
-          Читает и пишет <code>~/hh-outreach-data/sent.json</code> с полным аудит-следом. Переживает падения (бэкап <code>.bak</code>). Жёстко останавливается после &gt; 180 откликов — неформальный дневной лимит HH.
+          Читает и пишет <code>~/hh-outreach-data/sent.json</code> с полным аудит-следом. Переживает падения (бэкап <code>.bak</code>). Жёстко останавливается после &gt; 180 откликов — неформальный дневной лимит площадки.
         </aside>
       </div>
     </div>
@@ -1025,10 +1025,10 @@ html.reduce #s11 .status-card .hdr .live::before{ animation:none; }
         <div>
           <h3 class="lead reveal">Второй <em>пруд.</em></h3>
           <ul class="bullets">
-            <li class="reveal">Операционный паттерн hh-outreach, другой портал — SuperJob.ru, №2 джоб-борд России.</li>
+            <li class="reveal">Операционный паттерн работы с вакансиями, другой портал — SuperJob.ru, №2 джоб-борд России.</li>
             <li class="reveal" style="--d:60ms;">Параллельная сессия Claude активно собирает скелет. Персистентный профиль Chrome в <code class="mono">~/superjob-outreach-data/pw-profile/</code> уже создан. Директория скилла <code class="mono">~/.claude/skills/superjob-outreach/</code> зарезервирована. Интеграция CDP зеркалит HH.</li>
             <li class="reveal" style="--d:120ms;">Почему второй инструмент, а не один параметризованный раннер? Другой DOM, другая антибот-логика, другие поля зарплаты. <b>Один скилл на портал = меньше хрупкости, чем абстракция.</b></li>
-            <li class="reveal" style="--d:180ms;">Прогноз: выйти на функциональный паритет с hh-outreach. Тогда ≈ <b>+40–60% объёма лидов</b> при маржинальной стоимости около нуля — тот же копирайт, тот же CDP, другой инвентарь.</li>
+            <li class="reveal" style="--d:180ms;">Прогноз: выйти на функциональный паритет с Vacancy Outreach Skill. Тогда ≈ <b>+40–60% объёма лидов</b> при маржинальной стоимости около нуля — тот же копирайт, тот же CDP, другой инвентарь.</li>
           </ul>
         </div>
 
@@ -1069,7 +1069,7 @@ html.reduce #s11 .status-card .hdr .live::before{ animation:none; }
       </p>
 
       <div class="cta" role="list">
-        <a href="https://github.com/TimmyZinin/hh-outreach" rel="noopener"><span>github.com/TimmyZinin/hh-outreach</span><span class="muted mono" style="font-size:12px; letter-spacing:.18em; text-transform:uppercase;">репо · outbound</span></a>
+        <a href="https://github.com/TimmyZinin/vacancy-outreach-skill" rel="noopener"><span>github.com/TimmyZinin/vacancy-outreach-skill</span><span class="muted mono" style="font-size:12px; letter-spacing:.18em; text-transform:uppercase;">репо · outbound</span></a>
         <a href="https://github.com/santifer/career-ops" rel="noopener"><span>github.com/santifer/career-ops</span><span class="muted mono" style="font-size:12px; letter-spacing:.18em; text-transform:uppercase;">upstream · career-ops</span></a>
         <a href="https://timzinin.com" rel="noopener"><span>timzinin.com</span><span class="muted mono" style="font-size:12px; letter-spacing:.18em; text-transform:uppercase;">главная</span></a>
         <a href="https://x.com/timzinin" rel="noopener"><span>@timzinin · X / LinkedIn</span><span class="muted mono" style="font-size:12px; letter-spacing:.18em; text-transform:uppercase;">DM открыты</span></a>
